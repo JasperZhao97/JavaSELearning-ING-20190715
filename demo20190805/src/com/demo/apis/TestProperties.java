@@ -1,6 +1,7 @@
 package com.demo.apis;
 
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Properties;
@@ -27,7 +28,7 @@ public class TestProperties {
             properties.setProperty("gooodName","雪碧");
             properties.setProperty("gooodsprice","3.5");
             //保存属性到文件
-            properties.store(new FileWriter("demo20190805/src/com/demo/apis/test.properties"),"商品信息");
+            properties.store(new FileOutputStream("demo20190805/src/com/demo/apis/test.properties"),"商品信息");
             System.out.println("修改属性列表数据成功");
         } catch (IOException e) {
             e.printStackTrace();
