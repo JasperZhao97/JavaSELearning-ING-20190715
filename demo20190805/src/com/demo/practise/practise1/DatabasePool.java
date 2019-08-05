@@ -51,7 +51,7 @@ public class DatabasePool {
      * 设置属性
      */
     public void setter(String key,String value) throws IOException {
-        properties.setProperty("connection.minSize",value);
+        properties.setProperty(key,value);
         properties.store(new FileOutputStream("demo20190805/src/com/demo/practise/practise1/link.properties"),null);
     }
 
