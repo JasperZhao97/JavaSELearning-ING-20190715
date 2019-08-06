@@ -53,6 +53,16 @@ public class DatabasePool {
     public void setter(String key,String value) throws IOException {
         properties.setProperty(key,value);
         properties.store(new FileOutputStream("demo20190805/src/com/demo/practise/practise1/link.properties"),null);
+        properties.load(new FileInputStream("demo20190805/src/com/demo/practise/practise1/link.properties"));
+        //更新操作
+        driverClass = properties.getProperty("connection.driverClass");
+        url = properties.getProperty("connection.url");
+        username = properties.getProperty("connection.username");
+        password = properties.getProperty("connection.password");
+        minSize = properties.getProperty("connection.minSize");
+        maxSize = properties.getProperty("connection.maxSize");
+        timeout = properties.getProperty("connection.timeout");
+        maxStatement = properties.getProperty("connection.maxStatement");
     }
 
     /**

@@ -18,7 +18,7 @@ public class TestDatabasePool {
         StringBuffer stringBuffer = databasePool.getter();
         System.out.println(stringBuffer);
         //设置.properties文件的属性
-        databasePool.setter("connection.minSize","8");
+        databasePool.setter("connection.minSize","111");
         //获取.properties文件的属性
         System.out.println("----------------------------------------");
         stringBuffer = databasePool.getter();
