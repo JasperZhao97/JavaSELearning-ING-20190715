@@ -1,6 +1,6 @@
 package com.demo.practise.practise2;
 
-import com.demo.work.impl.PersonServiceImpl;
+import com.demo.practise.practise2.impl.PersonServiceImpl;
 
 import java.lang.reflect.Field;
 import java.text.Annotation;
