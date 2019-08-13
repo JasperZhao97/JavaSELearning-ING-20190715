@@ -15,7 +15,7 @@ public class FileUtil {
 
     public FileUtil() {
         //设置默认的文件大小为2M
-        this.size = 2*1024;
+        this.size = 2*1024*1024;
     }
 
     public FileUtil(Integer size, String type) {
