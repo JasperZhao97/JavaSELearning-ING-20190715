@@ -1,0 +1,24 @@
+1、创建.propertis属性文件，添加连接池相关属性，创建DatabasePool类，初始化时读取属性文件，封装信息。
+
+   要求：
+
+       静态块初始化，数据封装给静态成员；
+
+       提供setter()与getter()方法设置或获取属性。
+
+   提示：
+
+       文件中的数据如下：
+
+           connection.driverClass = com.MySQL.jdbc.Driver
+           connection.url = jdbc:mysql://localhost:3306/demo
+           connection.username = root
+           connection.password = 123456
+           connection.minSize = 5 
+           connection.maxSize = 30
+           connection.timeout = 1800
+           connection.maxStatement = 50       
+
+
+2、定义类ReflectionCreator,定义一个可以创建并初始化任意类对象的通用方法。
+        
