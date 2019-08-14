@@ -1,7 +1,5 @@
 package com.demo.collections;
 
-import com.demo.work.pojo.Company;
-
 import java.util.*;
 
 /**
