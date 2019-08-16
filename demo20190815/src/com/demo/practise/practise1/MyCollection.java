@@ -62,13 +62,13 @@ public class MyCollection {
         System.out.println("公司：" + company);
         Set<Map.Entry<String, HashMap>> citys = ((HashMap) (companys.get(company))).entrySet();
         for (Map.Entry<String, HashMap> city : citys) {
-            System.out.println("城市：" + city.getKey());
+            System.out.println("  "+"城市：" + city.getKey());
             Set<Map.Entry<String, ArrayList>> hastys = ((HashMap) (city.getValue())).entrySet();
             for (Map.Entry<String, ArrayList> hasty : hastys) {
-                System.out.println("仓库：" + hasty.getKey());
+                System.out.println("    "+仓库：" + hasty.getKey());
                 ArrayList products = new ArrayList();
                 products = (ArrayList) hasty.getValue();
-                System.out.print("商品：");
+                System.out.print("      "+"商品：");
                 System.out.println(products);
             }
         }
@@ -84,13 +84,13 @@ public class MyCollection {
             System.out.println("公司：" + company.getKey());
             Set<Map.Entry<String, HashMap>> citys = ((HashMap) (company.getValue())).entrySet();
             for (Map.Entry<String, HashMap> city : citys) {
-                System.out.println("城市：" + city.getKey());
+                System.out.println("  "+"城市：" + city.getKey());
                 Set<Map.Entry<String, ArrayList>> hastys = ((HashMap) (city.getValue())).entrySet();
                 for (Map.Entry<String, ArrayList> hasty : hastys) {
-                    System.out.println("仓库：" + hasty.getKey());
+                    System.out.println("    "+"仓库：" + hasty.getKey());
                     ArrayList products = new ArrayList();
                     products = (ArrayList) hasty.getValue();
-                    System.out.print("商品：");
+                    System.out.print("      "+"商品：");
                     System.out.println(products);
                 }
             }
