@@ -33,6 +33,7 @@ public class ClockThread extends Thread {
             //判断设置的时间是否小于当前时间
             if(applyDate.before(currentDate)) {
                applyDate = new Timestamp(applyDate.getTime()+24*60*60*1000);
+                System.out.println(applyDate);
             }
             //System.out.println(applyDate);
         } catch (ParseException e) {
@@ -59,7 +60,7 @@ public class ClockThread extends Thread {
                     addTimertask(timer);
                 }
             }
-        }, applyDate, 2000);
+        }, applyDate, 500);
     }
 
     @Override
@@ -71,7 +72,7 @@ public class ClockThread extends Thread {
     }
 
     public static void main(String[] args) {
-        ClockThread t1 = new ClockThread("11:13:50");
+        ClockThread t1 = new ClockThread("11:31:55");
         t1.start();
     }
 
